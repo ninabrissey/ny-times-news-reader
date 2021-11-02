@@ -6,23 +6,16 @@
 // https://api.nytimes.com/svc/topstories/v2/us.json?api-key=yourkey
 // https://api.nytimes.com/svc/topstories/v2/world.json?api-key=yourkey
 
-// export const getData = async (section) => {
-//   try {
-//     const data = await (
-//       await fetch(
-//         `https://api.nytimes.com/svc/topstories/v2/${section}.json?${API_KEY}`
-//       )
-//     ).json();
-//     console.log(data);
-//   } catch (error) {
-//     console.log(error);
-//   }
-// };
-
-export const getData = async (section, apiKey) => {
+export const getData = async (section) => {
   try {
     const data = await fetch(
-      `https://api.nytimes.com/svc/topstories/v2/${section}.json?${apiKey}`
+      'https://api.nytimes.com/svc/topstories/v2/home.json?api-key=VUy19Fl88GH7UARSGbrbazb9U2MqOVdj',
+      {
+        method: 'GET',
+        headers: {
+          Accept: 'application/json',
+        },
+      }
     );
     const articles = await data.json();
     console.log(articles);
