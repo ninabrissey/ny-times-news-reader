@@ -1,6 +1,7 @@
 import { getData } from '../utils/apiCalls';
 import { useEffect } from 'react';
-import './App.css';
+import Nav from '../Nav/Nav';
+// import { Route, Switch } from 'react-router-dom';
 
 // export REACT_APP_NY_TIMES_KEY=VUy19Fl88GH7UARSGbrbazb9U2MqOVdj
 
@@ -8,24 +9,12 @@ import './App.css';
 
 function App() {
   useEffect(() => {
-    getData('arts', `VUy19Fl88GH7UARSGbrbazb9U2MqOVdj=3v8z4iufN9khu4HC`);
+    getData('home', `api-key=VUy19Fl88GH7UARSGbrbazb9U2MqOVdj`);
   }, []);
 
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav />
     </div>
   );
 }
