@@ -12,6 +12,12 @@
   width: 40%;
 }
 
-.nav-links li {
+.nav-links a {
   list-style-type: none;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-links a:hover {
+  color: rgb(226, 43, 43);
 }
