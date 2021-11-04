@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import Card from '../Card/Card';
 import { getData } from '../utils/apiCalls';
-import '../Container/Container.css';
+import '../CardContainer/CardContainer.css';
 
 const Container = ({ section }) => {
   const [currentSection, setCurrentSection] = useState([]);
