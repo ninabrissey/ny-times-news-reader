@@ -1,10 +1,13 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
+import logo from '../images/ny-times-reader-logo.png';
 import '../Nav/Nav.css';
 
 const Nav = () => {
   return (
     <nav className="nav-bar">
-      <p>to be img icon</p>
+      <Link to="/">
+        <img src={logo} alt="NY Times Reader logo" />
+      </Link>
       <ul className="nav-links">
         <NavLink to="/home">
           <li>Home</li>
