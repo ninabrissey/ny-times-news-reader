@@ -1,6 +1,7 @@
 import Nav from '../Nav/Nav';
 import { Route, Switch } from 'react-router-dom';
 import CardContainer from '../CardContainer/CardContainer';
+import SingleArticle from '../SingleArticle/SingleArticle';
 
 function App() {
   return (
@@ -19,11 +20,11 @@ function App() {
         />
         <Route
           exact
-          path="/:section/:title"
+          path="/:section/:short_url"
           render={({ match }) => (
-            <CardContainer
+            <SingleArticle
               section={match.params.section}
-              title={match.params.title}
+              short_url={match.params.short_url}
             />
           )}
         />
