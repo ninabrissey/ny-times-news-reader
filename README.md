@@ -1,6 +1,6 @@
 # NY Times News Reader 
 
-<div align="center"><img src="https://user-images.githubusercontent.com/80136642/140534509-c4254a9f-c4cc-4a87-ac9f-1b5f270dbaaf.png" height="150px" width="150px"/><h1>The Film Vault</h1>
+<div align="center"><img src="https://user-images.githubusercontent.com/80136642/140534509-c4254a9f-c4cc-4a87-ac9f-1b5f270dbaaf.png" height="150px" width="150px"/><h1>NY Times Reader</h1>
 <p>A movie database application for users looking to browse movies effortlessly by title.</p>
 <a href="https://the-film-vault.herokuapp.com/">View Deployed Site Here</a>
 </div>
