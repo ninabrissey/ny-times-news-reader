@@ -1,6 +1,7 @@
 import Nav from '../Nav/Nav';
 import { Route, Switch } from 'react-router-dom';
-import Container from '../Container/Container';
+import CardContainer from '../CardContainer/CardContainer';
+import SingleArticle from '../SingleArticle/SingleArticle';
 
 function App() {
   return (
@@ -8,12 +9,24 @@ function App() {
       <Nav />
       <Switch>
         <Route exact path="/">
-          <Container section="home" />
+          <CardContainer section="home" />
         </Route>
         <Route
           exact
           path="/:section"
-          render={({ match }) => <Container section={match.params.section} />}
+          render={({ match }) => (
+            <CardContainer section={match.params.section} />
+          )}
+        />
+        <Route
+          exact
+          path="/:section/:id"
+          render={({ match }) => (
+            <SingleArticle
+              section={match.params.section}
+              id={match.params.id}
+            />
+          )}
         />
       </Switch>
     </div>

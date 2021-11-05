@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import Card from '../Card/Card';
 import { getData } from '../utils/apiCalls';
-import '../Container/Container.css';
+import '../CardContainer/CardContainer.css';
 
 const Container = ({ section }) => {
   const [currentSection, setCurrentSection] = useState([]);
@@ -31,8 +31,8 @@ const Container = ({ section }) => {
         <p>loading</p>
       ) : (
         <section>
+          <h2>{section.toUpperCase()}</h2>
           {currentSection.map((article) => {
-            console.log(article);
             return (
               <Card key={article.title} section={section} article={article} />
             );
