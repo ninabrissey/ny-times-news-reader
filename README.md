@@ -18,6 +18,15 @@
 
 ### Summary
 
+#### Tasked to create a newsreader application that pulls articles from the New York Times API Top Stories API.
+
+#### At a minimum it must include the following:
+
+* A list of articles
+* A “detailed” view for each article (as opposed to summary/list view)
+* Articles in the list must link to the detailed article view you create
+* Some sort of search, filter, OR sort
+
 ### Preview
 ![ny-times-reader](https://user-images.githubusercontent.com/80136642/140536184-e5b7a64d-92c7-488c-b5b3-555081297b91.gif)
  
