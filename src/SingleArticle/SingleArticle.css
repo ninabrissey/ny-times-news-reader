@@ -1,0 +1,10 @@
+.single-article {
+  width: 400px;
+  margin: auto;
+}
+
+.single-article-image {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
