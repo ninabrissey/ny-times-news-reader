@@ -20,11 +20,11 @@ function App() {
         />
         <Route
           exact
-          path="/:section/:short_url"
+          path="/:section/:id"
           render={({ match }) => (
             <SingleArticle
               section={match.params.section}
-              short_url={match.params.short_url}
+              id={match.params.id}
             />
           )}
         />
