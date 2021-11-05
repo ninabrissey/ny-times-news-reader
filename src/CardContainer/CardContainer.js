@@ -31,8 +31,8 @@ const Container = ({ section }) => {
         <p>loading</p>
       ) : (
         <section>
+          <h2>{section.toUpperCase()}</h2>
           {currentSection.map((article) => {
-            console.log(article);
             return (
               <Card key={article.title} section={section} article={article} />
             );
