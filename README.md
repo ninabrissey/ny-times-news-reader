@@ -55,7 +55,7 @@ JavaScript | CSS | ReactRouter | React | fetchAPI | npm library: day.js
 ##### * [Project Spec](https://mod4.turing.edu/projects/take_home/take_home_fe)
 ##### * [GitHub Project Board](https://github.com/ninabrissey/ny-times-news-reader/projects/1)
 ##### * [Inspiration 1](https://www.nytimes.com/)
-##### * [Inspiration 1](https://wordpress.org/themes/newsreaders/)
+##### * [Inspiration 2](https://wordpress.org/themes/newsreaders/)
 
 ---
 
